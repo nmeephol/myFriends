@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Friends</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+        <div class="header">
+            <h1>Random Number Of Friends</h1>
+            <h2 id = "randomNum">0</h2>
+        </div>
+
+        <div class="bodyPart">
+            <button onclick="GenerateInput()" id="Input-bt" class="clearfix" style="display: none;">Let's Start!</button>
+            <div id="inputContainer" class="container"></div>
+
+            <button onclick="submitForm()" id="submit-bt" class="clearfix" type="submit" style="display: none;">SUBMIT</button>
+            <button onclick="resetForm()" id="reset-bt" class="clearfix" style="display: none;">RESET</button>
+
+            <div id="FuncSelection" style="display: none;">
+                <div id="funcA">
+                    <p>Ages Amount :</p>
+                    <button onclick="SumAge()">click</button>
+                    <p id="sumAge"></p>
+                </div>
+                <div id="funcB">
+                    <p>Ages Average :</p>
+                    <button onclick="AverageAge()">click</button>
+                    <p id="averageAge"></p>
+                </div>
+                <div id="funcC">
+                    <p>Youngest :</p>
+                    <button onclick="Min()">click</button>
+                    <p id="youngestPeople"></p>
+                </div>
+                <div id="funcD">
+                    <p>Oldest :</p>
+                    <button onclick="Max()">click</button>
+                    <p id="oldestPeople"></p>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
